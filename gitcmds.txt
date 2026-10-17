@@ -1,0 +1,26 @@
+               GIT Comands
+----------------------------------------------
+first create any folder and open it in CMD 
+-> git init (this will create a local repo)
+to check the commited files and new files created 
+-> git status 
+now create remote repo in git hub and use the  HTTPS link and connect it with local repo 
+-> git remote add origin paste_your_https_link_here (now u can push your files from local repo to remote repo which is we can see in git hub)
+#Create your files or update your files and check the status using (git status)
+#then it shows your files where changes are made 
+
+to push those files
+first we have to send those files from "working directory" to "staging area"
+-> git add file_name_with_extinsion
+now it goes from "working directory" to "staging area"
+now try checking the status again -> you can see those files ready to be commited
+
+now check the branch you want to commit those files 
+->git branch (to see which branch you are in)
+->git checkout -b "your_new_branch_name" (to create new branch)
+->git checkout your_branch_name  (this cmd is used to shift to different branches)
+
+Always check which branch you are in and push or commit your changes
+
+now to push your files to your branch in local repo to remote repo that is to git hub
+->git push -u origin your_branch_name  (now your files are deployed to local repo)
